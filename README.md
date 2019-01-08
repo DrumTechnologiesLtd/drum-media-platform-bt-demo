@@ -171,7 +171,7 @@ Drum provides a functions to handle subscribing to a video connection.
 
 ```
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
-+  const connections = event;
++  const connections = event.connections;
 +
 +  Object.keys(connections).forEach(connectionId => {
 +    const connection = connections[connectionId];
@@ -191,7 +191,7 @@ We can use the DOM manipulation functions we defined earlier to take all the vid
 
 ```
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
-  const connections = event;
+  const connections = event.connections;
 
   Object.keys(connections).forEach(connectionId => {
     const connection = connections[connectionId];
@@ -217,7 +217,7 @@ Luckily our [EventHandler](https://developer.mozilla.org/en-US/docs/Web/API/Even
 
 ```
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
-  const connections = event;
+  const connections = event.connections;
 
   Object.keys(connections).forEach(connectionId => {
     const connection = connections[connectionId];
