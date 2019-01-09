@@ -43,7 +43,7 @@ function removeVideoElement(id) {
 }
 ```
 
-`getMediaStream()`: Returns a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) containing an Audio Track (User's Microphone) and Video Track (User's Webcam)
+`getMediaStream()`: Returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves with a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) containing an audio track (user's microphone) and video track (user's webcam)
 
 `addVideoElement()`: Creates a [Video Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) and adds it to the DOM
 
