@@ -4,11 +4,17 @@ In this tutorial, we’ll show how to build simple audio/video conferencing appl
 
 You can see what we’ll be building here: [Final Result](https://codepen.io/p8952/pen/bOMOBZ). If the code doesn’t make sense to you, don’t worry! The goal of this tutorial is to help you understand Drum.
 
-We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language.
-
 First, open this [Starter Code](https://codepen.io/p8952/pen/WLyqQO) in a new tab. The new tab should display an empty JS code editor, we will be writing our code here in this tutorial.
 
 You might want to follow along with a friend, or in two seperate tabs so you can see how everything looks & works with mutiple participants!
+
+### Prerequisites
+
+We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language.
+
+If you need to review JavaScript, we recommend reading this [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we’re also using some features from ES6 - a recent version of JavaScript. In this tutorial, we’re using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements.
+
+We'll also be using a small subset of the [WebRTC](https://webrtc.org/) APIs provided by modern browsers, you'll need to be using a recent version of [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-GB/firefox/new/) to follow this tutorial.
 
 ### DOM Manipulation
 
@@ -69,6 +75,8 @@ const userName = "Summer Alaska";
 `userId`: Should be a [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) that can uniquely identify the user
 
 `userName:` Should be a [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) that can visually identify the user
+
+⚠️ In a real application you will need to generate a session token in a secure fashion using your API key as well, this step has been omitted for brevity.
 
 ### Connecting to Drum
 
