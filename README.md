@@ -163,7 +163,7 @@ DrumMediaPlatform.init()
 
 We'll now need to select which video connections we want to subscribe to. Remember the [EventHandler](https://developer.mozilla.org/en-US/docs/Web/API/EventListener/handleEvent) we created earlier? This will fire whenever the state in the room changes - for example when a new video connection becomes available to subscribe to.
 
-Drum provides a functions to handle subscribing to a video connection.
+Drum provides a function to handle subscribing to a video connection.
 
 * `subscribe()`: Subscribes to a video connection
 
