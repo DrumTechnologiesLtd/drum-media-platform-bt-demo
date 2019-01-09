@@ -64,7 +64,7 @@ const userName = "Summer Alaska";
 
 `applicationId`: For the purpose of this demo this value is hard-coded to `9999999999`, in a real application it will be a 10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) you are given along with your API Key
 
-`roomId`: Should be a 1-10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), prefixed with your applicationId, any users connecting with the same value will be placed in the same room
+`roomId`: Should be [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) prefixed with your applicationId, any users connecting with the same value will be placed in the same room
 
 `userId`: Should be a [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) that can uniquely identify the user
 
