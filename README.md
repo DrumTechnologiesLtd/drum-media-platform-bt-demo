@@ -20,7 +20,7 @@ We'll also be using a small subset of the [WebRTC APIs](https://developer.mozill
 
 To get started we will define some functions to handle DOM manipulation. For simplicity these are written in vanilla JavaScript and interact with the DOM directly. In a real application they will most probably be tightly coupled to your user interface code and be written using a library such as React, Angular, or Vue.
 
-```
+```diff
 function getMediaStream() {
   return navigator.mediaDevices.getUserMedia({ audio: true, video: true });
 }
@@ -61,7 +61,7 @@ function removeVideoElement(id) {
 
 Once we have the DOM manipulation sorted we can define some constants that will be used to connect to Drum. In a real application these will generally be unique per user and most probably be generated based on pre-existing information you have about the user. 
 
-```
+```diff
 const applicationId = "9999999999";
 const roomId = parseInt(`${applicationId}55555`, 10);
 const userId = `${Math.floor(Math.random() * 899999) + 100000}`;
@@ -82,7 +82,7 @@ const userName = "Summer Alaska";
 
 As a next step we want to initialise Drum API and create a connection.
 
-```
+```diff
 DrumMediaPlatform.init()
   .then(() => {
     return DrumMediaPlatform.connect(roomId, userId, userName);
@@ -94,7 +94,7 @@ DrumMediaPlatform.init()
 
 We also want add an [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener) that will call an [EventHandler](https://developer.mozilla.org/en-US/docs/Web/API/EventListener/handleEvent) whenever the connections in a room change. It is here that we'll define most of our business logic and decide what we can to do with the connections in a room. 
 
-```
+```diff
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
 });
 ```
@@ -123,7 +123,7 @@ Drum provides two functions to handle broadcasting the tracks contained within a
 
 For now we'll just focus on the audio track.
 
-```
+```diff
 DrumMediaPlatform.init()
   .then(() => {
     return DrumMediaPlatform.connect(roomId, userId, userName);
@@ -149,7 +149,7 @@ Video conferencing requires a little bit more work, but not much!
 
 To start with we'll also broadcast the video track from our [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream).
 
-```
+```diff
 DrumMediaPlatform.init()
   .then(() => {
     return DrumMediaPlatform.connect(roomId, userId, userName);
@@ -175,7 +175,7 @@ Drum provides a function to handle subscribing to a video connection.
 
 * `subscribe()`: Subscribes to a video connection
 
-```
+```diff
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
 +  const connections = event.connections;
 +
@@ -195,7 +195,7 @@ Great! We will now subscribe to every new video connection that appears in the r
 
 We can use the DOM manipulation functions we defined earlier to take all the videos we are subscribed to and render them to the DOM.
 
-```
+```diff
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
   const connections = event.connections;
 
@@ -221,7 +221,7 @@ We're almost there, but there is one last thing to do. Unfortunately sometimes p
 
 Luckily our [EventHandler](https://developer.mozilla.org/en-US/docs/Web/API/EventListener/handleEvent) is called whenever anything changes in the room, including people leaving. So whenever the state in the room changes we can use that as an opportunity to remove any empty videos from the DOM.
 
-```
+```diff
 DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
   const connections = event.connections;
 
