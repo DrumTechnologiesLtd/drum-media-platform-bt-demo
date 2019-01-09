@@ -124,7 +124,7 @@ DrumMediaPlatform.init()
 +    return getMediaStream();
 +  })
 +  .then(mediaStream => {
-+    return DrumMediaPlatform.addAudioStream(mediaStream, "microphone")
++    return DrumMediaPlatform.addAudioStream(mediaStream, "microphone");
 +  })
   .catch(error => {
     console.error("DRUM -", error);
@@ -150,7 +150,7 @@ DrumMediaPlatform.init()
     return getMediaStream();
   })
   .then(mediaStream => {
--    return DrumMediaPlatform.addAudioStream(mediaStream, "microphone")
+-    return DrumMediaPlatform.addAudioStream(mediaStream, "microphone");
 +    return Promise.all([
 +      DrumMediaPlatform.addAudioStream(mediaStream, "microphone"),
 +      DrumMediaPlatform.addVideoStream(mediaStream, "camera")
