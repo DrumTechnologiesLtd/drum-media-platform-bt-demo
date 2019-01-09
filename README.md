@@ -57,7 +57,7 @@ Once we have the DOM manipulation sorted we can define some constants that will 
 
 ```
 const applicationId = "9999999999";
-const roomId = `${applicationId}55555`;
+const roomId = parseInt(`${applicationId}55555`, 10);
 const userId = `${Math.floor(Math.random() * 899999) + 100000}`;
 const userName = "Summer Alaska";
 ```
