@@ -107,7 +107,7 @@ Now that we've covered those concepts we can return to our code.
 
 The first thing we want to do is use the `getMediaStream()` function to retrieve a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) containing two tracks, one audio (the user's microphone) and one video (the user's webcam)
 
-Drum provides two functions to handle broadcasting the tracks contained within a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream)
+Drum provides two functions to handle broadcasting the tracks contained within a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream).
 
 * `addAudioStream()`: Extracts the audio track from a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) and broadcasts it
 
