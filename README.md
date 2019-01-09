@@ -62,9 +62,9 @@ const userId = `${Math.floor(Math.random() * 899999) + 100000}`;
 const userName = "Summer Alaska";
 ```
 
-`applicationId`: For the purpose of this demo this value is hard-coded to `9999999999`. In a real application it will be a 10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) you are given along with your API Key
+`applicationId`: For the purpose of this demo this value is hard-coded to `9999999999`, in a real application it will be a 10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) you are given along with your API Key
 
-`roomId`: Should be a 1-10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), prefixed with your applicationId. Any users connecting with the same value will be placed in the same room
+`roomId`: Should be a 1-10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), prefixed with your applicationId, any users connecting with the same value will be placed in the same room
 
 `userId`: Should be a [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) that can uniquely identify the user
 
@@ -105,9 +105,9 @@ Video mixing is handled by an [SFU](https://webrtcglossary.com/sfu/) and a user 
 
 Now that we've covered those concepts we can return to our code.
 
-The first thing we want to do is use the `getMediaStream()` function to retrieve a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) containing two tracks, one audio (the user's microphone) and one video (the user's webcam).
+The first thing we want to do is use the `getMediaStream()` function to retrieve a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) containing two tracks, one audio (the user's microphone) and one video (the user's webcam)
 
-Drum provides two functions to handle broadcasting the tracks contained within a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream).
+Drum provides two functions to handle broadcasting the tracks contained within a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream)
 
 * `addAudioStream()`: Extracts the audio track from a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) and broadcasts it
 
