@@ -242,4 +242,4 @@ DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
 });
 ```
 
-That's all folks! There is a lot more we might want to add to this application, and there is a LOT more Drum can do. But we hope this has given you a taste and that you now feel like you have a decent grasp on how Drum works.
+[That's all folks!](https://www.youtube.com/watch?v=b9434BoGkNQ) There is a lot more we might want to add to this application, and there is a LOT more Drum can do. But we hope this has given you a taste and that you now feel like you have a decent grasp on how Drum works.
