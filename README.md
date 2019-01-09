@@ -14,7 +14,7 @@ We’ll assume that you have some familiarity with HTML and JavaScript, but you 
 
 If you need to review JavaScript, we recommend reading this [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we’re also using some features from ES6 - a recent version of JavaScript. In this tutorial, we’re using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements.
 
-We'll also be using a small subset of the [WebRTC](https://webrtc.org/) APIs provided by modern browsers, you'll need to be using a recent version of [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-GB/firefox/new/) to follow this tutorial.
+We'll also be using a small subset of the [WebRTC APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) provided by modern browsers, you'll need to be using a recent version of [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-GB/firefox/new/) to follow this tutorial.
 
 ### DOM Manipulation
 
