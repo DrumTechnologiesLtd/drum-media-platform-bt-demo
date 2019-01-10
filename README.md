@@ -249,3 +249,13 @@ DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
 ```
 
 [That's all folks!](https://www.youtube.com/watch?v=b9434BoGkNQ) There is a lot more we might want to add to this application, and there is a LOT more Drum can do. But we hope this has given you a taste and that you now feel like you have a decent grasp on how Drum works.
+
+### Example Applications
+
+To showcase what else Drum can do, here's a selection of applications powered in part by the Drum Media Platform.
+
+* [Firefox Screenshare Demo](https://codepen.io/p8952/pen/JwaxQL)
+
+* [This Is Drum - Instant Web Meetings](https://thisisdrum.com/)
+
+* [PowWowNow - Web Meetings](https://www.powwownow.co.uk/)
