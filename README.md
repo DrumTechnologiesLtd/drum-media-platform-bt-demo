@@ -62,13 +62,13 @@ function removeVideoElement(id) {
 Once we have the DOM manipulation sorted we can define some constants that will be used to connect to Drum. In a real application these will generally be unique per user and most probably be generated based on pre-existing information you have about the user. 
 
 ```diff
-const applicationId = "9999999999";
+const applicationId = "99999";
 const roomId = parseInt(`${applicationId}55555`, 10);
 const userId = `${Math.floor(Math.random() * 899999) + 100000}`;
 const userName = "Summer Alaska";
 ```
 
-`applicationId`: For the purpose of this demo this value is hard-coded to `9999999999`, in a real application it will be a 10 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) you are given along with your API Key
+`applicationId`: For the purpose of this demo this value is hard-coded to `99999`, in a real application it will be a 5 digit [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) you are given along with your API Key
 
 `roomId`: Should be [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) prefixed with your applicationId, any users connecting with the same value will be placed in the same room
 
