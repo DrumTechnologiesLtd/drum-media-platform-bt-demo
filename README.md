@@ -254,8 +254,6 @@ DrumMediaPlatform.on(DrumMediaPlatform.events.ROOM_UPDATE, event => {
 
 To showcase what else Drum can do, here's a selection of applications powered in part by the Drum Media Platform.
 
-* [Firefox Screenshare Demo](https://codepen.io/p8952/pen/JwaxQL)
-
 * [This Is Drum - Instant Web Meetings](https://thisisdrum.com/instant-meeting)
 
 * [PowWowNow - Web Meetings](https://www.powwownow.co.uk/)
